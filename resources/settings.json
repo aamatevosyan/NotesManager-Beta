@@ -1,0 +1,122 @@
+{
+  "py/object": "notes.core.notebooksettings.NotebookSettings",
+  "settings": {
+    "attachments_view_mode": "icon",
+    "date_time_insert_style": "%A, %d. %B %Y %H:%M",
+    "font_info": "Times New Roman\n,16,-1,5,50,0,0,0,0,0",
+    "note_categories": [
+      {
+        "color": {
+          "py/reduce": [
+            {
+              "py/type": "notes.core.categorycolor.CategoryColor"
+            },
+            {
+              "py/tuple": [
+                "AquamarineBlue"
+              ]
+            }
+          ]
+        },
+        "name": "Favorites",
+        "py/object": "notes.core.notecategory.NoteCategory"
+      },
+      {
+        "color": {
+          "py/reduce": [
+            {
+              "py/type": "notes.core.categorycolor.CategoryColor"
+            },
+            {
+              "py/tuple": [
+                "ChaletGreen"
+              ]
+            }
+          ]
+        },
+        "name": "Sport",
+        "py/object": "notes.core.notecategory.NoteCategory"
+      },
+      {
+        "color": {
+          "py/reduce": [
+            {
+              "py/type": "notes.core.categorycolor.CategoryColor"
+            },
+            {
+              "py/tuple": [
+                "Candlelight"
+              ]
+            }
+          ]
+        },
+        "name": "Hobbies",
+        "py/object": "notes.core.notecategory.NoteCategory"
+      },
+      {
+        "color": {
+          "py/reduce": [
+            {
+              "py/type": "notes.core.categorycolor.CategoryColor"
+            },
+            {
+              "py/tuple": [
+                "Cinnabar"
+              ]
+            }
+          ]
+        },
+        "name": "Studies",
+        "py/object": "notes.core.notecategory.NoteCategory"
+      },
+      {
+        "color": {
+          "py/reduce": [
+            {
+              "py/type": "notes.core.categorycolor.CategoryColor"
+            },
+            {
+              "py/tuple": [
+                "Heather"
+              ]
+            }
+          ]
+        },
+        "name": "Books and Comics",
+        "py/object": "notes.core.notecategory.NoteCategory"
+      },
+      {
+        "color": {
+          "py/reduce": [
+            {
+              "py/type": "notes.core.categorycolor.CategoryColor"
+            },
+            {
+              "py/tuple": [
+                "Coral"
+              ]
+            }
+          ]
+        },
+        "name": "Movies and TV series",
+        "py/object": "notes.core.notecategory.NoteCategory"
+      },
+      {
+        "color": {
+          "py/reduce": [
+            {
+              "py/type": "notes.core.categorycolor.CategoryColor"
+            },
+            {
+              "py/tuple": [
+                "SilverChalice"
+              ]
+            }
+          ]
+        },
+        "name": "Other",
+        "py/object": "notes.core.notecategory.NoteCategory"
+      }
+    ]
+  }
+}
