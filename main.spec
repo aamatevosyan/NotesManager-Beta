@@ -1,16 +1,14 @@
 # -*- mode: python ; coding: utf-8 -*-
 
-from glob import glob
-
 block_cipher = None
 
 
 a = Analysis(['main.py'],
-             pathex=[],
+             pathex=['C:\\Users\\newap\\Desktop\\NotesManager-Beta'],
              binaries=[],
-             datas=[],
-             hiddenimports=['jsonpickle','simplejson'],
-             hookspath=['notes'],
+             datas=[('resources/*', '.'),('icons/*', 'icons'),('notes/core/icons/colors/*', 'notes/core/icons/colors'), ('notes/core/icons/extensions/*', 'notes/core/icons/extensions')],
+             hiddenimports=['simplejson', 'jsonpickle'],
+             hookspath=['C:\\Users\\newap\\Desktop\\NotesManager-Beta'],
              runtime_hooks=[],
              excludes=[],
              win_no_prefer_redirects=False,
@@ -18,11 +16,6 @@ a = Analysis(['main.py'],
              cipher=block_cipher,
              noarchive=False)
 
-datas = []
-datas += glob('/notes/*')
-datas += glob('/resources/*')
-
-a.datas = datas
 
 pyz = PYZ(a.pure, a.zipped_data,
              cipher=block_cipher)
@@ -30,16 +23,17 @@ exe = EXE(pyz,
           a.scripts,
           [],
           exclude_binaries=True,
-          name='Notes Manager',
-          debug=True,
+          name='main',
+          debug=False,
           bootloader_ignore_signals=False,
           strip=False,
-          upx=False,
-          console=True , icon='C:\\Users\\newap\\Desktop\\NotesManager-Beta\\Icon.ico')
+          upx=True,
+          console=True )
 coll = COLLECT(exe,
                a.binaries,
                a.zipfiles,
                a.datas,
                strip=False,
-               upx=False,
-               name='NotesManager')
+               upx=True,
+               upx_exclude=[],
+               name='main')

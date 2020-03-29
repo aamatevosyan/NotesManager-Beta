@@ -177,7 +177,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         fileMenu = menubar.addMenu("File")
         editMenu = menubar.addMenu("Edit")
         viewMenu = menubar.addMenu("View")
-        # helpMenu = menubar.addMenu("Help")
+        helpMenu = menubar.addMenu("Help")
 
         self.fileMenu = fileMenu
         self.editMenu = editMenu
